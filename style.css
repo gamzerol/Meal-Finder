@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: antiquewhite;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.headerText {
+    margin: 1rem;
+    font-size: 2.4rem;
+    color: rgb(233, 29, 97);
+    text-shadow: 4px 2px 3px rgba(32, 32, 32, 0.5);
+}
+.search-field {
+    display: flex;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+form #inputMeal {
+    padding: .3rem;
+    width: 300px;
+    font-family: 'Sriracha', cursive;
+    text-transform: capitalize;
+}
+#searchBtn, #randomBtn {
+    padding: 0px .5rem;
+    cursor: pointer;
+}
+#searchBtn:hover, #randomBtn:hover {
+    border: 2px solid purple;
+}
+#randomBtn {
+    margin-left: 1rem;
+}
+.result-header {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Sriracha', cursive;
+}
+.results {
+    margin: 1rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.results .meal {
+    position: relative;
+}
+.results .meal img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid paleturquoise;
+}
+.meal .meal-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    transition: opacity 0.2s ease-in;
+    opacity: 0;
+}
+.meal-info:hover {
+    opacity: 1;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.single-meal {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 15rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px dashed rgb(71, 70, 70);
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.2);
+}
+.inner img {
+    width: 300px;
+}
+.single-meal-info {
+    background-color: rgb(240, 155, 183);
+    border: 1px solid rgb(14, 13, 14);
+    padding: 0rem 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+.meal-name {
+    color: purple;
+    font-family: 'Sriracha', cursive;
+}
+.main {
+    text-align: center;
+}
+.main h2 {
+    margin: 1rem;
+    font-family: 'Sriracha', cursive;
+}
+.single-meal ul {
+    list-style: none;
+    margin: 0px 3rem;
+}
+ul li {
+    background-color: rgb(238, 185, 142);
+    display: inline-block;
+    padding: .3rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
